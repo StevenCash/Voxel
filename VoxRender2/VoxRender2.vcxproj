@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\VScode\glm;C:\VScode\glad\include;C:\VScode\glfw-3.2.1.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\VScode\glm;C:\VScode\glad\include\glad;C:\VScode\glad\src;C:\VScode\glfw-3.2.1.bin.WIN64\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\VScode\glfw-3.2.1.bin.WIN64\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -128,11 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c" />
+    <ClCompile Include="..\..\glad\src\glad.c" />
     <ClCompile Include="voxrender.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\glad\include\glad\glad.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
